@@ -16,10 +16,10 @@ Previs: <br>
 Autenticació-Autorització: <br>
 <a href="DiferenciaAutenticacioAutoritzacio(iManeres).pdf" download target=_blank>Autenticació vs Autorització</a><br>
  
- <ul> 
+<ul> 
 <li>Mòduls PAM i autenticació local</li>
 <a href="HashesContrasenyesiKeyloggers.pdf" download target=_blank>Hashes i endevinació de contrasenyes</a><br>
-<a href="PAM.pdf" download target=_blank>PAM</a><br><br>
+<a href="PAM.pdf" download target=_blank>PAM i mòduls interessants (pam_limit, pam_pwquality, etc)</a><i>Pes 3</i><br><br>
  
 <li>Client Kerberos+LDAP i FreeIPA (NSS+PAM+SSSD)</li>
 <a href="LDAP-Kerberos-FreeIPA/LDAP-NSS.pdf" download target=_blank>Teoria LDAP (i NSS)</a><br>
@@ -30,32 +30,40 @@ Autenticació-Autorització: <br>
 <a href="LDAP-Kerberos-FreeIPA/Kerberos.pdf" download target=_blank>Instal.lació i configuració d'un servidor MIT Kerberos i cooperació amb servidors LDAP i NFS</a><i>Pes 5</i><br>
 <a href="LDAP-Kerberos-FreeIPA/FreeIPA.pdf" download target=_blank>FreeIPA (client, servidor i rèplica)</a><i>Pes 4</i><br>
  
-*ACLs Pes 3
-*SELinux Pes 4
-  Capabilities Pes 3
-  Chroot (amd Systemd-nspawn) Pes 3
-  Pam-limit Pes 3
-*Servidor RADIUS Pes 4
+ <li>ACLs, Capabilities, atributs extesos, chroots </li> 
+ <a href="">Su i sudo</a><br> 
+ <a href="">Polkit</a><br> 
+ <a href="">Bits suid,sgid,sticky</a><br> 
+ <a href="">Capabilities i atributs extesos</a><i>Pes 3</i><br>
+ <a href="">ACLs</a><i>Pes 3</i><br>
+ <a href="">Chroot (amd Systemd-nspawn)<i>Pes 3</i><br>
+  
+ <li>Servidor RADIUS<i>Pes 4</i></li>
+ <li>SELinux<i>Pes 4</i></li>
+ 
  </ul><br>
  
 Monitorització local: <br>
-*Eines vàries: Audit, Rkhunter, Maldet, Aide, OpenSCAP Pes 4
+<a href="">Eines vàries: Audit, Rkhunter, Maldet, Aide, OpenSCAP </a><i>Pes 4</i><br>
 
 Hardering local:<br>
-*Diferents aspectes (contrasenyes Bios i Grub, proteccions Sysctl  Pes 3
-*LUKS Pes 3
+<a href="">Contrasenyes arranc: Bios i Grub </a><i>Pes 3</i><br>
+<a href="">Proteccions Sysctl </a><i>Pes 3</i><br>
+<a href="">Encriptació de disc amb LUKS </a><i>Pes 3</i><br>
  
 Monitorització de xarxa: <br>
-*Wireshark. Nmap Pes 4
-*Monitorització d'ample de banda (ntop, cacti...). NIDS Snort. Detector de vulnerabilitats OpenVAS Pes 4
+<a href="">Wireshark. Nmap </a><i>Pes 4</i><br>
+<a href="">Monitorització d'ample de banda (ntop, cacti...) </a><i>Pes 4</i><br>
+<a href="">NIDS Snort/Suricata </a><i>Pes 4</i><br>
+<a href="">Detector de vulnerabilitats OpenVAS </a><i>Pes 4</i><br>
  
-Hardering de xarxa i servidors: <br>
-*Tallafocs Netfilter Pes 5
-*Certificats PKI Pes 5
-*TLS i el seu ús en Apache Pes 4
-*Servidor i client NFS4 segur. Client CIFS segur Pes 3
-*Servidor DNS (Bind) autoritatiu i recursiu segur amb DNSSEC Pes 5
-*OpenVPN. IPSec Pes 4
+Hardering de xarxa i servidors: <br> 
+ <a href="">Tallafocs Netfilter </a><i>Pes 5 </i><br>
+<a href="">Certificats PKI </a><i>Pes 5 </i><br>
+<a href="">TLS i el seu ús en Apache </a><i>Pes 4 </i><br>
+<a href="">Servidor i client NFS4 segur. Client CIFS segur </a><i>Pes 3 </i><br>
+<a href="">Servidor DNS (Bind) autoritatiu i recursiu segur amb DNSSEC </a><i>Pes 5 </i><br>
+ <a href="">OpenVPN. IPSec </a><i>Pes 4 </i><br>
  
  
 </body>
