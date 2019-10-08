@@ -1,32 +1,55 @@
 <html>
 <body>
 <h1>Material curs LPIC 3-303</h1>
-Enllaços sobre els exàmens:<br>
+<b>Enllaços sobre els exàmens:</b><br>
 <a href="http://www.lpi.org/our-certifications/summary-of-certifications">Resum de les certificacions</a><br>
 <a href="https://www.lpi.org/our-certifications/lpic-3-303-overview">Resum de la certificació LPIC-3 (303)</a><br>
 <a href="https://www.lpi.org/our-certifications/exam-303-objectives">El que cal saber per superar l'examen 303</a><br>
-<a href="programa.html">Programa del curs</a><br>
 <br><hr><br>
  
-Documents del curs: <br>
+<b>Documents del curs:</b> <br>
  
- Autenticació-Autorització
-*Client Kerberos+LDAP i FreeIPA (NSS+PAM+SSSD) Pes 5
-*Servidor FreeIPA Pes 4
-*Servidor RADIUS Pes 4
+Previs: <br>
+<a href="ComandesXarxaBasiquesLinux.pdf.pdf" download target=_blank>Comandes de xarxa bàsiques en Linux</a><br> 
+<a href="LDAP-Kerberos-FreeIPA/NFS.pdf" download target=_blank>Conceptes bàsics sobre NFS</a><br>
+
+Autenticació-Autorització: <br>
+<a href="DiferenciaAutenticacioAutoritzacio(iManeres).pdf" download target=_blank>Autenticació vs Autorització</a><br>
+ 
+ <ul> 
+<li>Mòduls PAM i autenticació local</li>
+<a href="HashesContrasenyesiKeyloggers.pdf" download target=_blank>Hashes i endevinació de contrasenyes</a><br>
+<a href="PAM.pdf" download target=_blank>PAM</a><br><br>
+ 
+<li>Client Kerberos+LDAP i FreeIPA (NSS+PAM+SSSD)</li>
+<a href="LDAP-Kerberos-FreeIPA/LDAP-NSS.pdf" download target=_blank>Teoria LDAP (i NSS)</a><br>
+<a href="LDAP-Kerberos-FreeIPA/PracticaInstalacion389DS.pdf" download target=_blank>Instal.lació servidor 389DS</a><br>
+<a href="LDAP-Kerberos-FreeIPA/PracticaAdministracionBasicaDirectorio.pdf" download target=_blank>Administració bàsica d'un directori 389DS</a><br>
+<a href="LDAP-Kerberos-FreeIPA/usuarios.ldif" download target=_blank>Arxiu ldif amb usuaris de mostra</a><br>
+<a href="LDAP-Kerberos-FreeIPA/LoginDesdeClienteUsandoSSSD.pdf" download target=_blank>Autenticació i identificació contra servidor 389DS fent servir SSSD</a><i>Pes 5</i><br>
+<a href="LDAP-Kerberos-FreeIPA/Kerberos.pdf" download target=_blank>Instal.lació i configuració d'un servidor MIT Kerberos i cooperació amb servidors LDAP i NFS</a><i>Pes 5</i><br>
+<a href="LDAP-Kerberos-FreeIPA/FreeIPA.pdf" download target=_blank>FreeIPA (client, servidor i rèplica)</a><i>Pes 4</i><br>
+ 
 *ACLs Pes 3
 *SELinux Pes 4
-
-Monitorització local
+  Capabilities Pes 3
+  Chroot (amd Systemd-nspawn) Pes 3
+  Pam-limit Pes 3
+*Servidor RADIUS Pes 4
+ </ul><br>
+ 
+Monitorització local: <br>
 *Eines vàries: Audit, Rkhunter, Maldet, Aide, OpenSCAP Pes 4
 
-Hardering local
-*Diferents aspectes (contrasenyes Bios i Grub, proteccions Sysctl; Capabilities; Chroot; Pam-limit, etc) Pes 3
+Hardering local:<br>
+*Diferents aspectes (contrasenyes Bios i Grub, proteccions Sysctl  Pes 3
 *LUKS Pes 3
-Monitorització de xarxa
+ 
+Monitorització de xarxa: <br>
 *Wireshark. Nmap Pes 4
 *Monitorització d'ample de banda (ntop, cacti...). NIDS Snort. Detector de vulnerabilitats OpenVAS Pes 4
-Hardering de xarxa i servidors
+ 
+Hardering de xarxa i servidors: <br>
 *Tallafocs Netfilter Pes 5
 *Certificats PKI Pes 5
 *TLS i el seu ús en Apache Pes 4
@@ -35,23 +58,5 @@ Hardering de xarxa i servidors
 *OpenVPN. IPSec Pes 4
  
  
- 
- 
- 
- 
-<a href="ComandesXarxaBasiquesLinux.pdf.pdf" download target=_blank>Comandes de xarxa bàsiques en Linux</a><br> 
- 
-<a href="DiferenciaAutenticacioAutoritzacio(iManeres).pdf" download target=_blank>Autenticació vs Autorització</a><br>
-<a href="HashesContrasenyesiKeyloggers.pdf" download target=_blank>Hashes i endevinació de contrasenyes</a><br>
-<a href="PAM.pdf" download target=_blank>PAM</a><br><br>
-
-<a href="LDAP-Kerberos-FreeIPA/LDAP-NSS.pdf" download target=_blank>Teoria LDAP (i NSS)</a><br>
-<a href="LDAP-Kerberos-FreeIPA/PracticaInstalacion389DS.pdf" download target=_blank>Instal.lació servidor 389DS</a><br>
-<a href="LDAP-Kerberos-FreeIPA/PracticaAdministracionBasicaDirectorio.pdf" download target=_blank>Administració bàsica d'un directori 389DS</a><br>
-<a href="LDAP-Kerberos-FreeIPA/usuarios.ldif" download target=_blank>Arxiu ldif amb usuaris de mostra</a><br>
-<a href="LDAP-Kerberos-FreeIPA/LoginDesdeClienteUsandoSSSD.pdf" download target=_blank>Autenticació i identificació contra servidor 389DS fent servir SSSD</a><br>
-<a href="LDAP-Kerberos-FreeIPA/Kerberos.pdf" download target=_blank>Instal.lació i configuració d'un servidor MIT Kerberos i cooperació amb servidors LDAP i NFS</a><br>
-<a href="LDAP-Kerberos-FreeIPA/NFS.pdf" download target=_blank>Conceptes bàsics sobre NFS</a><br>
-
 </body>
 </html>
