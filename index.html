@@ -18,7 +18,7 @@ Autenticació-Autorització: <br>
  
 <ul> 
 <li>Mòduls PAM i autenticació local</li>
-<a href="HashesContrasenyesiKeyloggers.pdf" download target=_blank>Hashes i endevinació de contrasenyes</a><br>
+<a href="HashesContrasenyesiKeyloggers.pdf" download target=_blank>Hashes i endevinació de contrasenyes. Keyloggers</a><br>
 <a href="PAM.pdf" download target=_blank>PAM i mòduls interessants (pam_limit, pam_pwquality, etc)</a><i>Pes 3</i><br><br>
  
 <li>Client Kerberos+LDAP i FreeIPA (NSS+PAM+SSSD)</li>
@@ -28,23 +28,33 @@ Autenticació-Autorització: <br>
 <a href="LDAP-Kerberos-FreeIPA/usuarios.ldif" download target=_blank>Arxiu ldif amb usuaris de mostra</a><br>
 <a href="LDAP-Kerberos-FreeIPA/LoginDesdeClienteUsandoSSSD.pdf" download target=_blank>Autenticació i identificació contra servidor 389DS fent servir SSSD</a><i>Pes 5</i><br>
 <a href="LDAP-Kerberos-FreeIPA/Kerberos.pdf" download target=_blank>Instal.lació i configuració d'un servidor MIT Kerberos i cooperació amb servidors LDAP i NFS</a><i>Pes 5</i><br>
-<a href="LDAP-Kerberos-FreeIPA/FreeIPA.pdf" download target=_blank>FreeIPA (client, servidor i rèplica)</a><i>Pes 4</i><br>
+<!--<a href="LDAP-Kerberos-FreeIPA/FreeIPA.pdf" download target=_blank>FreeIPA (client, servidor i rèplica)</a><i>Pes 4</i><br>-->
  
- <li>ACLs, Capabilities, atributs extesos, chroots </li> 
- <a href="">Su i sudo</a><br> 
- <a href="">Polkit</a><br> 
- <a href="">Bits suid,sgid,sticky</a><br> 
- <a href="">Capabilities i atributs extesos</a><i>Pes 3</i><br>
- <a href="">ACLs</a><i>Pes 3</i><br>
- <a href="">Chroot (amd Systemd-nspawn)<i>Pes 3</i><br>
+ <li>Frameworks d'autorització </li> 
+ <a href="SuSudo.pdf" download target=_blank>Su i sudo</a><br> 
+ <a href="Polkit.pdf" download target=_blank>Polkit</a><br> 
+ 
+ <li>ACLs, Capabilities i atributs extesos </li> 
+ <a href="Suid.pdf" download target=_blank>Bits suid,sgid,sticky</a><br> 
+ <a href="CapabilitiesIAtrExt.pdf" download target=_blank>Capabilities i atributs extesos</a><i>Pes 3</i><br>
+ <a href="ACLs.pdf" download target=_blank>ACLs</a><i>Pes 3</i><br>
+ 
+ <li>Chroot (amb contenidos Systemd) </li> 
+ <a href="ChrootAmbMkosiiSystemd-nspawn.pdf" download target=_blank>Chroot (amd Systemd-nspawn)<i>Pes 3</i><br>
   
- <li>Servidor RADIUS<i>Pes 4</i></li>
  <li>SELinux<i>Pes 4</i></li>
+ <li>Servidor RADIUS<i>Pes 4</i></li>
  
  </ul><br>
- 
+<!-- 
 Monitorització local: <br>
-<a href="">Eines vàries: Audit, Rkhunter, Maldet, Aide, OpenSCAP </a><i>Pes 4</i><br>
+<a href="">Journald</a><br>
+<a href="">Strace i Sysdig</a><br>
+<a href="">Falco</a><br>
+<a href="">Audit</a><i>Pes 4</i><br>
+<a href="">Lynis, Rkhunter, Maldet, Aide </a><i>Pes 4</i><br>
+<a href="">OpenSCAP </a><i>Pes 4</i><br>
+ELK, Forensics, Honeypots, Inotify...
 
 Hardering local:<br>
 <a href="">Contrasenyes arranc: Bios i Grub </a><i>Pes 3</i><br>
@@ -64,7 +74,7 @@ Hardering de xarxa i servidors: <br>
 <a href="">Servidor i client NFS4 segur. Client CIFS segur </a><i>Pes 3 </i><br>
 <a href="">Servidor DNS (Bind) autoritatiu i recursiu segur amb DNSSEC </a><i>Pes 5 </i><br>
  <a href="">OpenVPN. IPSec </a><i>Pes 4 </i><br>
- 
+--> 
  
 </body>
 </html>
