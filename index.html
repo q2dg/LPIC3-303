@@ -5,13 +5,19 @@
 <a href="http://www.lpi.org/our-certifications/summary-of-certifications">Resum de les certificacions</a><br>
 <a href="https://www.lpi.org/our-certifications/lpic-3-303-overview">Resum de la certificació LPIC-3 (303)</a><br>
 <a href="https://www.lpi.org/our-certifications/exam-303-objectives">El que cal saber per superar l'examen 303</a><br>
+ <h3>Recursos:</h3>
+<a href="https://cloud.elpuig.xeill.net/index.php/s/fCVJncmSoqezlFA"> Màquina servidora LDAP+Kerberos+NFS4 ja funcional</a><br>
+<a href="https://cloud.elpuig.xeill.net/index.php/s/jg0rgR83L1Jv5tl"> Màquina client SSSD ja funcional</a><br>
+<a href="LDAP-Kerberos-FreeIPA/usuarios.ldif" download target=_blank>Arxiu ldif amb usuaris de mostra</a><br>
 <br><hr><br>
  
 <h3>Documents del curs:</h3> 
  
 <b>Previs: </b><br>
 <a href="ComandesXarxaBasiquesLinux.pdf.pdf" download target=_blank>Comandes de xarxa bàsiques en Linux</a><br> 
-<a href="LDAP-Kerberos-FreeIPA/NFS.pdf" download target=_blank>Conceptes bàsics sobre NFS</a><br><br>
+<a href="LDAP-Kerberos-FreeIPA/LDAP-NSS.pdf" download target=_blank>Teoria bàsica sobre LDAP (i NSS)</a><br>
+<a href="LDAP-Kerberos-FreeIPA/NFS.pdf" download target=_blank>Teoria bàsica sobre NFS</a><br>
+<a href="">Journald</a><br><br><br>
 <!--shadow, apache2, d-bus?-->
 
 <b>Autenticació-Autorització:</b><br>
@@ -23,16 +29,11 @@ Mòduls PAM<br>
 <a href="PAM.pdf" download target=_blank>PAM i mòduls interessants (pam_limit, pam_pwquality, etc)</a><i> (Pes 3)</i><br><br>
  
 Client Kerberos+LDAP i FreeIPA (NSS+PAM+SSSD)<br>
-<a href="LDAP-Kerberos-FreeIPA/LDAP-NSS.pdf" download target=_blank>Teoria LDAP (i NSS)</a><br>
 <a href="LDAP-Kerberos-FreeIPA/PracticaInstalacion389DS.pdf" download target=_blank>Instal.lació servidor 389DS</a><br>
 <a href="LDAP-Kerberos-FreeIPA/PracticaAdministracionBasicaDirectorio.pdf" download target=_blank>Administració bàsica d'un directori 389DS</a><br>
-<a href="LDAP-Kerberos-FreeIPA/usuarios.ldif" download target=_blank>Arxiu ldif amb usuaris de mostra</a><br>
 <a href="LDAP-Kerberos-FreeIPA/LoginDesdeClienteUsandoSSSD.pdf" download target=_blank>Autenticació i identificació contra servidor 389DS fent servir SSSD</a><i>(Pes 5)</i><br>
-<a href="LDAP-Kerberos-FreeIPA/Kerberos.pdf" download target=_blank>Instal.lació i configuració d'un servidor MIT Kerberos i cooperació amb servidors LDAP i NFS</a><i>(Pes 5)</i><br><br>
-<!--<a href="LDAP-Kerberos-FreeIPA/FreeIPA.pdf" download target=_blank>FreeIPA (client, servidor i rèplica)</a><i>(Pes 4)</i><br>-->
- <a href="https://cloud.elpuig.xeill.net/index.php/s/jg0rgR83L1Jv5tl"> Màquina client </a>
- <a href="https://cloud.elpuig.xeill.net/index.php/s/fCVJncmSoqezlFA"> Màquina servidora </a>
- 
+<a href="LDAP-Kerberos-FreeIPA/Kerberos.pdf" download target=_blank>Instal.lació i configuració d'un servidor MIT Kerberos i cooperació amb servidors LDAP i NFS</a><i>(Pes 5)</i><span style="color:red;">PENDENT NFS</span><br>
+<a href="LDAP-Kerberos-FreeIPA/FreeIPA.pdf" download target=_blank>FreeIPA (client, servidor i rèplica)</a><i>(Pes 4)</i><span style="color:red;">PENDENT</span><br><br>
  
 Frameworks d'autorització <br>
 <a href="SuSudo.pdf" download target=_blank>Su i sudo</a><br> 
@@ -43,21 +44,19 @@ ACLs, Capabilities i atributs extesos <br>
 <a href="CapabilitiesIAtrExt.pdf" download target=_blank>Capabilities i atributs extesos</a><i>(Pes 3)</i><br>
 <a href="ACLs.pdf" download target=_blank>ACLs</a><i>(Pes 3)</i><br><br>
  
-Chroot (amb Systemd-nspawn)<br>
-<a href="ChrootAmbMkosiiSystemd-nspawn.pdf" download target=_blank>Contenidors mkosi/machinectl</a><i>(Pes 3)</i><br><br>
-  
-<!-- 
-SELinux<i>(Pes 4)</i><br><br>
-Servidor RADIUS<i>(Pes 4)</i><br><br>
--->
+<a href="SELinux.pdf" download target=_blank>SELinux</a><i>(Pes 4)</i><br><br>
+<a href="Radius.pdf" download target=_blank>Servidor RADIUS</a><i>(Pes 4)</i><span style="color:red;">PENDENT</span><br><br> 
+ 
+Chroot i altres "bitxos": namespaces, cgroups, OS/App containers<br>
+<a href="IntroContenidors.pdf" download target=_blank>Intro contenidors</a><i>(Pes 3)</i><span style="color:red;">PENDENT</span><br>
+<a href="ChrootAmbMkosiiSystemd-nspawn.pdf" download target=_blank>Exemple pràctic: contenidors mkosi/machinectl</a><i>(Pes 3)</i><br><br>
+
  
 <b>Monitorització local: </b><br>
-<!-- 
-<a href="">Journald</a><br>
 <a href="">Strace i Sysdig</a><br>
 <a href="">Falco</a><br>
 <a href="">Audit</a><i>(Pes 4)</i><br>
-<a href="">Lynis, Rkhunter, Maldet, Aide </a><i>(Pes 4)</i><br>
+<!-- <a href="">Lynis, Rkhunter, Maldet, Aide </a><i>(Pes 4)</i><br>
 <a href="">OpenSCAP </a><i>(Pes 4)</i><br>
 ELK, Forensics, Honeypots, Inotify...
 -->
@@ -73,6 +72,7 @@ ELK, Forensics, Honeypots, Inotify...
 <a href="">Monitorització d'ample de banda (ntop, cacti...) </a><i>(Pes 4)</i><br>
 <a href="">NIDS Snort/Suricata </a><i>(Pes 4)</i><br>
 <a href="">Detector de vulnerabilitats OpenVAS </a><i>(Pes 4)</i><br>
+metasploit??
 -->
  <b>Hardering de xarxa i servidors:</b> <br> 
 <!--  
@@ -82,6 +82,7 @@ ELK, Forensics, Honeypots, Inotify...
 <a href="">Servidor i client NFS4 segur. Client CIFS segur </a><i>(Pes 3)</i><br>
 <a href="">Servidor DNS (Bind) autoritatiu i recursiu segur amb DNSSEC </a><i>(Pes 5)</i><br>
  <a href="">OpenVPN. IPSec </a><i>(Pes 4)</i><br>
+wireguard, bettercap-dns?
 --> 
  
 </body>
