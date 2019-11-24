@@ -34,7 +34,7 @@ givenName: Perico
 cn: Pedro Perez
 displayName: Pedro Perez
 uidNumber: 3002
-gidNumber: 10001
+gidNumber: 10000
 userPassword: XXX
 gecos: Es un crack
 loginShell: /bin/bash
