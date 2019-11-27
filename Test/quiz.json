@@ -346,7 +346,7 @@
         "b": "auditctl -A –f /etc/firewall/rules –o r– o w –l firewall",
         "c": "auditctl –w /etc/firewall/rules -p rw -k firewall",
 	"d": "auditctl -_read /etc/firewall/rules -_write /etc/firewall/rules --label firewall",
-	"e": "echo \"n: firewall r:/etc/firewall/rules: w:/ etc/firewall/rules:\" | auditctl ~
+	"e": "echo 'n: firewall r:/etc/firewall/rules: w:/ etc/firewall/rules:\' | auditctl ~"
       },
       "correctAnswer": "c"
 },
