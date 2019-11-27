@@ -1,0 +1,791 @@
+[
+
+{
+      "question": "What is the purpose of IPTables's \"ipsets\"?",
+      "answers": {
+        "a": "They group together IP addresses that are assigned to the same network interfaces.",
+        "b": "They group together IP addresses and networks that can be referenced by the network routing table.",
+        "c": "They group together IP addresses that can be referenced by netfilter rules.",
+	"d": "They group together IP and MAC addresses used by the neighbors on the local network.",
+	"e": "They group together IP addresses and user names that can be referenced from /etc/hosts.allow and /etc/hosts.deny"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Linux Extended File Attributes are organized in namespaces. Which of the following names correspond to existing attribute namespaces? (Choose THREE correct answers.)",
+      "answers": {
+        "a": "default",
+        "b": "system",
+        "c": "owner",
+	"d": "trusted",
+	"e": "user"
+      },
+      "correctAnswer": "b,d,e"
+},
+{
+      "question": "In which path is the data, which can be altered by the sysctl command, accessible?",
+      "answers": {
+        "a": "/dev/sys",
+        "b": "/sys",
+        "c": "/proc/sys",
+	"d": "/sysctl"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which DNS label points to the DANE information used to secure HTTPS connections to https://www.example.com?",
+      "answers": {
+        "a": "example.com",
+        "b": "dane.www.example.com",
+        "c": "soa.example.com",
+	"d": "www.example.com",
+	"e": "_443_tcp.www.example.com"
+      },
+      "correctAnswer": "e"
+},
+{
+      "question": "What happens when the command getfattr afile is run while the file afile has no extended attributes set?",
+      "answers": {
+        "a": "getfattr prints a warning and exits with a values of 0.",
+        "b": "No output is produced and getfattr exits with a value of 0.",
+        "c": "getfattr prints a warning and exits with a value of 1.",
+	"d": "No outputs is produced and getfattr exits with a value of 1."
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Given a proper network and name resolution setup, which of the following commands establishes a trust between a FreeIPA domain and an Active Directory domain?",
+      "answers": {
+        "a": "ipa trust-add --type ad addom --admin Administrator --password",
+        "b": "ipa-ad --add-trust --account administrator --query-password",
+        "c": "net ad ipa join addom –U Administrator -p",
+	"d": "trustmanager add –-domain ad://addom --user Administrator –w",
+	"e": "ipa ad join addom -U Administrator -w"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "An X509 certificate contains the following information: <i>X509v3 Basic Constraints: critical CA:TRUE, pathlen:0</i> Which of the following statements are true regarding the certificate? (Choose TWO correct answers.)",
+      "answers": {
+        "a": "This certificate may be used to sign certificates of subordinate certification authorities.",
+        "b": "This certificate belongs to a certification authority.",
+        "c": "This certificate may be used to sign end-entity certificates",
+	"d": "This certificate uses at least an 8096 bit private key length"
+      },
+      "correctAnswer": "b,c"
+},
+{
+      "question": "Which of the following sections are allowed within the Kerberos configuration file krb5.conf? (Choose THREE correct answers.)",
+      "answers": {
+        "a": "[plugins]",
+        "b": "[crypto]",
+        "c": "[domain]",
+	"d": "[capaths]",
+	"e": "[realms]"
+      },
+      "correctAnswer": "a,d,e"
+},
+{
+      "question": "What effect does the configuration SSLStrictSNIVHostCheck on have on an Apache HTTPD virtual host?",
+      "answers": {
+        "a": "Despite its configuration, the virtual host is served only on the common name and Subject Alternative Names of the server certificates.",
+        "b": "The virtual host is used as a fallback default for all clients that do not support SNI.",
+        "c": "All of the names of the virtual host must be within the same DNS zone.",
+	"d": "The virtual host is served only to clients that support SNI.",
+	"e": "The clients connecting to the virtual host must provide a client certificate that was issued by the same CA that issued the server’s certificate."
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "How does TSIG authenticate name servers in order to perform secured zone transfers?",
+      "answers": {
+        "a": "Both servers mutually verify their X509 certificates.",
+        "b": "Both servers use a secret key that is shared between the servers.",
+        "c": "Both servers verify appropriate DANE records for the labels of the NS records used to delegate the transferred zone.",
+	"d": "Both servers use DNSSEC to mutually verify that they are authoritative for the transferred zone."
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following database names can be used within a Name Service Switch (NSS) configuration file? (Choose TWO correct answers).",
+      "answers": {
+        "a": "group",
+        "b": "file",
+        "c": "passwd",
+	"d": "users"
+      },
+      "correctAnswer": "a,c"
+},
+{
+      "question": "Which of the following command lines sets the administrator password for ntop to testing123?",
+      "answers": {
+        "a": "ntop --set-admin-password=testing123",
+        "b": "ntop --set-password-testing123",
+        "c": "ntop --reset-password=testing 123",
+	"d": "ntop --set-new-password=testing123"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "What command is used to update NVTs from the OpenVAS NVT feed? (Specify ONLY the command without any path or parameters).",
+      "answers": {
+        "a": "openvas-nvt-sync //www.openvas.org/openvas-nvt-feed.html",
+        "b": "nmap --script=vuln 0.0.0.0",
+        "c": "nikto 0.0.0.0",
+	"d": "ncat 0.0.0.0"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following lines in an OpenSSL configuration adds an X 509v3 Subject Alternative Name extension for the host names example.org and www.example.org to a certificate'?",
+      "answers": {
+        "a": "subjectAltName = DNS: www example.org, DNS:example.org",
+        "b": "extension= SAN: www.example.org, SAN:example.org",
+        "c": "subjectAltName: www.example.org, subjectAltName: example.org",
+	"d": "commonName = subjectAltName= www.example.org, subjectAltName = example.org",
+	"e": "subject= CN= www.example.org, CN=example.org"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following information, within a DNSSEC-signed zone, is signed by the key signing key?",
+      "answers": {
+        "a": "The non-DNSSEC records like A, AAAA or MX",
+        "b": "The zone signing key of the zone.",
+        "c": "The RRSIG records of the zone.",
+	"d": "The NSEC or NSEC3 records of the zone.",
+	"e": "The DS records pointing to the zone"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following commands displays all ebtable rules contained in the table filter including their packet and byte counters?",
+      "answers": {
+        "a": "ebtables -t nat -L -v",
+        "b": "ebtables -L -t filter -Lv",
+        "c": "ebtables -t filter -L -Lc",
+	"d": "ebtables -t filter -Ln -L",
+	"e": "ebtables -L -Lc -t filter"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following access control models is established by using SELinux?",
+      "answers": {
+        "a": "Security Access Control (SAC)",
+        "b": "Group Access Control (GAC)",
+        "c": "User Access Control (UAC)",
+	"d": "Discretionary Access Control (DAC)",
+	"e": "Mandatory Access Control (MAC)"
+      },
+      "correctAnswer": "e"
+},
+{
+      "question": "What is the purpose of the program snort-stat?",
+      "answers": {
+        "a": "It displays statistics from the running Snort process.",
+        "b": "It returns the status of all configured network devices.",
+        "c": "It reports whether the Snort process is still running and processing packets.",
+	"d": "It displays the status of all Snort processes.",
+	"e": "It reads syslog files containing Snort information and generates port scan statistics."
+      },
+      "correctAnswer": "e"
+},
+{
+      "question": "Which of the following methods can be used to deactivate a rule in Snort? (Choose TWO correct answers.)",
+      "answers": {
+        "a": "By placing a # in front of the rule and restarting Snort",
+        "b": "By placing a pass rule in local.rules and restarting Snort.",
+        "c": "By deleting the rule and waiting for Snort to reload its rules files automatically.",
+	"d": "By adding a pass rule to /etc/snort/rules.deactivated and waiting for Snort to reload its rules files automatically."
+      },
+      "correctAnswer": "b,c"
+},
+{
+      "question": "When OpenVPN sends a control packet to its peer, it expects an acknowledgement in 2 seconds by default. Which of the following options changes the timeout period to 5 seconds?",
+      "answers": {
+        "a": "-tls-timeout 5",
+        "b": "-tls-timeout 500",
+        "c": "-tls-timer 5",
+	"d": "-tls-timer 500"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which command revokes ACL-based write access for groups and named users on the file afile?",
+      "answers": {
+        "a": "setfacI -x group:*:rx,user:*:rx afile",
+        "b": "setfacl -x mask::rx afile",
+        "c": "setfacl ~m mask::rx afile",
+	"d": "setfacl ~m group:*:rx,user:*:rx afile"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following statements are true regarding the certificate of a Root CA? (Choose TWO correct answers.)",
+      "answers": {
+        "a": "It is a self-signed certificate.",
+        "b": "It does not include the private key of the CA",
+        "c": "It must contain a host name as the common name.",
+	"d": "It has an infinite lifetime and never expires.",
+	"e": "It must contain an X509v3 Authority extension."
+      },
+      "correctAnswer": "a,b,e"
+},
+{
+      "question": "Which of the following statements are valid wireshark capture filters? {Choose TWO correct answers.)",
+      "answers": {
+        "a": "port range 10000:tcp-15000:tcp",
+        "b": "port-range tcp 10000-15000",
+        "c": "tcp portrange 10000-15000",
+	"d": "portrange 10000/tcp-15000/tcp",
+	"e": "portrange 10000-15000 and tcp"
+      },
+      "correctAnswer": "c,e"
+},
+{
+      "question": "Which of the following commands adds a new user usera to FreelPA?",
+      "answers": {
+        "a": "useradd usera --directory ipa --gecos \"User A\"",
+        "b": "idap-useradd -H ldaps://ipa-server CN=UserA --attribs \"Firstname: User: Lastname: A\"",
+        "c": "ipa-admin create user --account usera -fname User –iname A",
+	"d": "ipa user-add usera --first User --last A",
+	"e": "ipa-user-add usera --name \"User A\""
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which option of the openvpn command should be used to ensure that ephemeral keys are not written to the swap space?",
+      "answers": {
+        "a": "--mlock",
+        "b": "--no-swap",
+        "c": "--root-swap",
+	"d": "--keys-no-swap"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following statements is used in a parameter file for setkey in order to create a new SPD entry?",
+      "answers": {
+        "a": "spd",
+        "b": "addspd",
+        "c": "newspd",
+	"d": "spdnew",
+	"e": "spdadd"
+      },
+      "correctAnswer": "e"
+},
+{
+      "question": "Which of the following terms refer to existing scan techniques with nmap? (Choose TWO correct answers.)",
+      "answers": {
+        "a": "Xmas Scan",
+        "b": "Zero Scan",
+        "c": "FIN Scan",
+	"d": "IP Scan",
+	"e": "UDP SYN Scan"
+      },
+      "correctAnswer": "a,c"
+},
+{
+      "question": "Which of the following commands makes the contents of the eCryptfs encrypted directory ~/Private available to the user?",
+      "answers": {
+        "a": "ecryptfsclient",
+        "b": "ecryptfs.mount",
+        "c": "ecryptfs-mount-private",
+	"d": "decryptfs",
+	"e": "ecryptfs-manage-directory"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following openssl commands generates a certificate signing request (CSR) using the already existing private key contained in the file private/keypair.pem?",
+      "answers": {
+        "a": "openssl req -key private/keypair.pem -out req/csr.pem",
+        "b": "openssl req -new -key private/keypair.pem -out req/csr.pem",
+        "c": "openssl gencsr -key private/keypair.pem -out req/csr.pem",
+	"d": "openssl gencsr -new-key private/keypair.pem -out req/csr.pem"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following expressions are valid AIDE rules? (Choose TWO correct answers.)",
+      "answers": {
+        "a": "!/var/run/.*",
+        "b": "append: /var/log/*",
+        "c": "/usr=all",
+	"d": "#/bin/",
+	"e": "/etc p+i+u+g"
+      },
+      "correctAnswer": "a,e"
+},
+{
+      "question": "Which command included in the Linux Audit system provides searching and filtering of the audit log?",
+      "answers": {
+        "a": "ausearch",
+        "b": "lsof",
+        "c": "dmesg",
+	"d": "top"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following are differences between AppArmor and SELinux? (Choose TWO correct answers).",
+      "answers": {
+        "a": "AppArmor is implemented in user space only. SELinux is a Linux Kernel Module.",
+        "b": "AppArmor is less complex and easier to configure than SELinux.",
+        "c": "AppArmor neither requires nor allows any specific configuration. SELinux must always be manually configured.",
+	"d": "SELinux stores information in extended file attributes. AppArmor does not maintain file specific information and states.",
+        "e": "The SELinux configuration is loaded at boot time and cannot be changed later on AppArmor provides user space tools to change its behavior."
+      },
+      "correctAnswer": "b,d"
+},
+{
+      "question": "Which of the following commands defines an audit rule that monitors read and write operations to the file/ etc/firewall/rules and associates the rule with the name firewall?",
+      "answers": {
+        "a": "auditctl -N firewall –r r: /etc/firewall/rules –r w: etc/firewall/rules",
+        "b": "auditctl -A –f /etc/firewall/rules –o r– o w –l firewall",
+        "c": "auditctl –w /etc/firewall/rules -p rw -k firewall",
+	"d": "auditctl -_read /etc/firewall/rules -_write /etc/firewall/rules --label firewall",
+	"e": "echo \"n: firewall r:/etc/firewall/rules: w:/ etc/firewall/rules:\" | auditctl ~
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following DNS record types can the command dnssec-signzone add to a zone? (Choose THREE correct answers.)",
+      "answers": {
+        "a": "ASIG",
+        "b": "NSEC",
+        "c": "NSEC3",
+	"d": "NSSIG",
+	"e": "RRSIG"
+      },
+      "correctAnswer": "b,c,e"
+},
+{
+      "question": "Which of the following parameters to openssl s_client specifies the host name to use for TLS Server Name Indication?",
+      "answers": {
+        "a": "-tlsname",
+        "b": "-servername",
+        "c": "-sniname",
+	"d": "-vhost",
+	"e": "-host"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following types can be specified within the Linux Audit system? (Choose THREE correct answers)",
+      "answers": {
+        "a": "Control rules",
+        "b": "File system rules",
+        "c": "Network connection rules",
+	"d": "Console rules",
+	"e": "System call rules"
+      },
+      "correctAnswer": "a,b,e"
+},
+{
+      "question": "Which of the following statements describes the purpose of ndpmon?",
+      "answers": {
+        "a": "It monitors the network for neighbor discovery messages from new IPv6 hosts and routers",
+        "b": "It monitors remote hosts by periodically sending echo requests to them.",
+        "c": "It monitors the availability of a network link by querying network interfaces.",
+	"d": "It monitors the network for IPv4 nodes that have not yet migrated to IPv6.",
+	"e": "It monitors log files for failed login attempts in order to block traffic from offending network nodes"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following commands adds users using SSSD’s local service?",
+      "answers": {
+        "a": "sss_adduser",
+        "b": "sss_useradd",
+        "c": "sss_add",
+	"d": "sss-addlocaluser",
+	"e": "sss_local_adduser"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following authentication methods was added to NFS in version 4?",
+      "answers": {
+        "a": "Kerberos authentication",
+        "b": "SSH hostkey authentication",
+        "c": "Winbind authentication",
+	"d": "SSL certificate authentication"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following statements is true about chroot environments?",
+      "answers": {
+        "a": "Symbolic links to data outside the chroot path are followed, making files and directories accessible",
+        "b": "Hard links to files outside the chroot path are not followed, to increase security",
+        "c": "The chroot path needs to contain all data required by the programs running in the chroot environment",
+	"d": "Programs are not able to set a chroot path by using a function call, they have to use the command chroot",
+	"e": "When using the command chroot, the started command is running in its own namespace and cannot communicate with other processes"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "What option of mount.cifs specifies the user that appears as the local owner of the files of a mounted CIFS share when the server does not provide ownership information? (Specify ONLY the option name without any values or parameters.)",
+      "answers": {
+        "a": "uid",
+        "b": "user",
+        "c": "forceuid",
+	"d": "owner"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which directive is used in an OpenVPN server configuration in order to send network configuration information to the client? (Specify ONLY the option name without any values or parameters.)",
+      "answers": {
+        "a": "push",
+        "b": "pull",
+        "c": "route",
+	"d": "net"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "This file must be sent to a CA in order to receive a signed certificate back from the CA.",
+      "answers": {
+        "a": "a CAR",
+        "b": "a SAN",
+        "c": "a CSR",
+	"d": "a private key file"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following lines is the appropriate configuration to use when adding a subject alternative name for the hostnames example.com and www.example.com to a certificate?",
+      "answers": {
+        "a": "extension=SAN:www.example.com,SAN:example.com",
+        "b": "subject=CN=www.example.com,CN=example.com",
+        "c": "subjectAltName:www.example.com,subjectAltName:example.com",
+	"d": "subjectAltName =DNS:www.example.com,DNS:example.com "
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which command is used to generate a CSR file?",
+      "answers": {
+        "a": "openssl genrsa",
+        "b": "openssl x509",
+        "c": "openssl req",
+	"d": "openssl csr"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "How can a user authenticate a website using a signed certificate?",
+      "answers": {
+        "a": "By verifying the certificate with the signing CA.",
+        "b": "By checking the certificate signature",
+        "c": "By verifying the certificate with the intermediary.",
+	"d": "By verifying the chain of trust."
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which directive is used by mod_ssl to determine the ciphers allowed for use in HTTPS communication?",
+      "answers": {
+        "a": "sslciphersuite",
+        "b": "SSLCipherSuite",
+        "c": "sslcipheroptions",
+	"d": "SSLCipherOptions"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "What is normally delivered with each TLS update? (Choose TWO correct answers.)",
+      "answers": {
+        "a": "Corresponding SSL patches",
+        "b": "Updated virus definitions",
+        "c": "Vulnerability patches",
+	"d": "De-supported ciphers"
+      },
+      "correctAnswer": "c,d"
+},
+{
+      "question": "Which of the following statements is true regarding eCryptfs?",
+      "answers": {
+        "a": "When a user changes their login password, the contents of their eCryptfs home directory has to be re-encrypted using their new login password.",
+        "b": "After unmounting an eCryptfs directory, the directory hierarchy and the original file names are still visible, although, it is not possible to view the contents of the files.",
+        "c": "eCryptfs does not support PAM integration.",
+	"d": "eCryptfs cannot be used to encrypt raw devices."
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which file is used on boot to open LUKS encrypted volumes prior to the mounting of the volume?",
+      "answers": {
+        "a": "/etc/crypttab",
+        "b": "/etc/lukstab",
+        "c": "/etc/fstab",
+	"d": "/etc/enctab"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Given that a LUKS device containing an ext4 filesystem was mapped using the command cryptsetup luksOpen /dev/sda2 secret, which command will mount the device to /mnt/protected?",
+      "answers": {
+        "a": "mount -t ext4 /dev/mapper/secret /mnt/protected",
+        "b": "mount -t ext4 /dev/sda2.secret /mnt/protected",
+        "c": "mount -t ext4 /dev/sda2 /mnt/protected",
+	"d": "mount -t ext4 /dev/mapper/sda2.secret /mnt/protected"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which command sets the lifetime for a DNSSEC key?",
+      "answers": {
+        "a": "dnssec-settime",
+        "b": "dnssec-expiretime",
+        "c": "dnssec-keyexpire",
+	"d": "dnssec-keytime"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "ALSR is controlled through which kernel parameter?",
+      "answers": {
+        "a": "kernel.randomize_va_space",
+        "b": "kernel.alsr",
+        "c": "vm.randomize_va_space",
+	"d": "vm.alsr"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following commands is used to edit kernel parameters?",
+      "answers": {
+        "a": "sysctl",
+        "b": "systemctl",
+        "c": "sysedit",
+	"d": "systemedit"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which PAM module allows for keystroke logging using the Linux audit system? (so logs may be viewed later using aureport --tty)",
+      "answers": {
+        "a": "pam_tty_audit",
+        "b": "pam_audit_keylog",
+        "c": "pam_tty",
+	"d": "pam_keylog"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following commands defines an audit rule that monitors read and write operations to the file /etc/firewall/rules and associates the rule with the name firewall?",
+      "answers": {
+        "a": "auditctl --read /etc/firewall/rules --write /etc/firewall/rules --label firewall",
+        "b": "auditctl -w /etc/firewall/rules -p rw -k firewall",
+        "c": "auditctl -A -f /etc/firewall/rules -o r -o w -l firewall",
+	"d": "auditctl -N firewall -r r: /etc/firewall/rules -r w: etc/firewall/rules"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following are valid settings in the conf.maldet file? (Choose TWO correct answers)",
+      "answers": {
+        "a": "autoupdate_defs",
+        "b": "autoupdate_version",
+        "c": "autoupdate_clam",
+	"d": "autoupdate_signatures"
+      },
+      "correctAnswer": "b,d"
+},
+{
+      "question": "What does KDC issue to a principle once that principle has authenticated?",
+      "answers": {
+        "a": "service ticket",
+        "b": "key",
+        "c": "realm",
+	"d": "TGT"
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which command produces a replica file for a FreeIPA domain?",
+      "answers": {
+        "a": "ipa-prepare-replica",
+        "b": "ipa-generate-replica",
+        "c": "ipa-replica-prepare",
+	"d": "ipa-replica-generate"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following component are part of FreeIPA? (Choose TWO correct answers)",
+      "answers": {
+        "a": "Kerberos KDC",
+        "b": "DHCP Server",
+        "c": "Public Key Infrastructure",
+	"d": "FTP Server"
+      },
+      "correctAnswer": "a,c"
+},
+{
+      "question": "Which command will remove the extended attribute 'flag' in the trusted namespace from the testfile?",
+      "answers": {
+        "a": "setfattr -x trusted.flag testfile",
+        "b": "setfattr -x flag -n trusted testfile",
+        "c": "setfattr -m flag -n trusted testfile",
+	"d": "setfattr -m trusted flag testfile"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "How are SELinux permissions related to standard Linux permissions?",
+      "answers": {
+        "a": "SELinux permissions are verified before standard linux permissions.",
+        "b": "SELinux permissions are verified after standard linux permissions.",
+        "c": "SELinux permissions override standard Linux permissions",
+	"d": "Standard Linux permissions override SELinux permissions."
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which of the following implement MAC? (Choose TWO correct answers)",
+      "answers": {
+        "a": "Smack",
+        "b": "Xattr",
+        "c": "AppArmor",
+	"d": "ACLs"
+      },
+      "correctAnswer": "a,c"
+},
+{
+      "question": "Which command parses and reports AVC entries in the audit log?",
+      "answers": {
+        "a": "seinfo",
+        "b": "semanage",
+        "c": "separse",
+	"d": "sealert"
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Assuming the file /opt/foo is on a mounted NFS export, which command will add a new ACE to that file that grants the local user, sam, traditional Linux style read and write access?",
+      "answers": {
+        "a": "nfs4_setfacl -a a::sam@localdomain:rw /opt/foo",
+        "b": "nfs4_setfacl -a a::sam@:RW /opt/foo",
+        "c": "nfs4_setfacl -a U::sam@:RW /opt/foo",
+	"d": "nfs4_setfacl -a a::sam@localdomain:RW /opt/foo"
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which of the following prefixes could be present in the output of getcifsacl? (Choose TWO correct answers)",
+      "answers": {
+        "a": "GRANT",
+        "b": "SID",
+        "c": "OWNER",
+	"d": "ACL"
+      },
+      "correctAnswer": "c,d"
+},
+{
+      "question": "Which one of the following kernel parameter should be disabled to protect against a rogue router advertisement presuming the host only has a single nic called eth0?",
+      "answers": {
+        "a": "net.ipv4.conf.eth0.accept_ra",
+        "b": "net.ipv4.conf.eth0.block_ra",
+        "c": "net.ipv6.conf.eth0.accept_ra",
+	"d": "net.ipv6.conf.eth0.block_ra"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "Which of the following stanzas is a valid client configuration for FreeRADIUS?",
+      "answers": {
+        "a": "client private-network-1 { ip = 192.0.2.0/24 secret = testing123-1 }",
+        "b": "client private-network-1 { ipaddr = 192.0.2.0/24 secret = testing123-1 }",
+        "c": "client private-network-1 { ipaddr = 192.0.2.0/24 password = testing123-1 }",
+	"d": "client private-network-1 { ip = 192.0.2.0/24 password = testing123-1 }"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "What type of rule is used to enable a dynamic rule in Snort?",
+      "answers": {
+        "a": "toggle",
+        "b": "enable",
+        "c": "trigger",
+	"d": "activate"
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which option will configure ntop to listen on port 2000 when used in daemon mode",
+      "answers": {
+        "a": "-p2000",
+        "b": "-P2000",
+        "c": "-W2000",
+	"d": "-w2000"
+      },
+      "correctAnswer": "c"
+},
+{
+      "question": "A Snort rule is comprised of which two major components?",
+      "answers": {
+        "a": "Configuration and Option",
+        "b": "Header and Option",
+        "c": "Header and Description",
+	"d": "Type and Option"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which command is used to interact with nftables?",
+      "answers": {
+        "a": "nft",
+        "b": "nftables",
+        "c": "nft-tables",
+	"d": "nftables-cmd"
+      },
+      "correctAnswer": "a"
+},
+{
+      "question": "Which of the following commands changes the source IP address to 192.0.2.11 for all IPv4 packets which go through the network interface eth0?",
+      "answers": {
+        "a": "iptables -t nat -A PREROUTING -i eth0 -j SNAT --to-source 192.0.2.11",
+        "b": "iptables -t mangle -A POSTROUTING -i eth0 -j SNAT -to-source 192.0.2.11",
+        "c": "iptables -t nat -A POSTROUTING -i eth0 -j DNAT --to-source 192.0.2.11",
+	"d": "iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to-source 192.0.2.11"
+      },
+      "correctAnswer": "d"
+},
+{
+      "question": "Which command will make the current firewall rule set persist a reboot?",
+      "answers": {
+        "a": "iptables --save /etc/sysconfig/iptables",
+        "b": "iptables-save > /etc/sysconfig/iptables",
+        "c": "iptables-save > /etc/iptables/rules.conf",
+	"d": "iptables --save > /etc/iptables/rules.conf"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which command enables a OpenVPN server (whose configuration is written in a file called 'server') on boot?",
+      "answers": {
+        "a": "systemctl start openvpn",
+        "b": "systemctl enable openvpn@server",
+        "c": "systemctl enable openvpn",
+	"d": "systemctl start openvpn@server"
+      },
+      "correctAnswer": "b"
+},
+{
+      "question": "Which kernel database is used to determine if IPSec applies to a given packet?",
+      "answers": {
+        "a": "Security Association Database",
+        "b": "Security Permission Database",
+        "c": "Security Policy Database",
+	"d": "Security Application Database"
+      },
+      "correctAnswer": "c"
+}
+
+
+]
